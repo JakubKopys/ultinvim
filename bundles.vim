@@ -5,7 +5,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'scrooloose/nerdtree'
 
 " Tmuxline
-" Plug 'edkolev/tmuxline.vim'
+Plug 'edkolev/tmuxline.vim'
 
 " CtrlP
 Plug 'ctrlpvim/ctrlp.vim'
