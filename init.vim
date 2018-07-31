@@ -37,8 +37,6 @@ set textwidth=0         " Do not wrap words (insert)
 set nowrap              " Do not wrap words (view)
 set showcmd             " Show (partial) command in status line.
 set showmatch           " Show matching brackets.
-" set ruler               " line and column number of the cursor position
-" set wildmenu            " enhanced command completion
 set visualbell          " use visual bell instead of beeping
 set laststatus=2        " always show the status line
 set list listchars=tab:>-,trail:.,extends:>
@@ -49,7 +47,6 @@ hi SpellErrors guibg=red guifg=black ctermbg=red ctermfg=black
 
 " terminal true colors
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-" let g:t_Co=256
 
 " decreasing updatetime
 set updatetime=100
