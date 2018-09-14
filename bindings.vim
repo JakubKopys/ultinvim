@@ -1,10 +1,6 @@
 " Key bindings
 
-" set mapleader
-let mapleader = ","
-let maplocalleader = "\\"
-
-" ,e to fast finding files. just type beginning of a name and hit TAB
+" \e to fast finding files. just type beginning of a name and hit TAB
 nmap <leader>e :e **/
 
 " keep selection after in/outdent
@@ -26,8 +22,8 @@ command! BufOnly silent! execute "%bd|e#|bd#"
 " nerdtree
 " Ctrl-P to Display the file browser tree
 nmap <C-n> :NERDTreeToggle<CR>
-" ,p to show current file in the tree
-nmap <leader>p :NERDTreeFind<CR>
+" ,r to show current file in the tree
+nmap <leader>r :NERDTreeFind<CR>
 
 " fugitive
 nmap <leader>g :silent Ggrep<space>
@@ -49,7 +45,7 @@ if has("mac") || has("gui_macvim") || has("gui_mac")
   nnoremap <leader>ct :let @*=expand("%:t")<CR>
 
   " directory name (/something/src)
-  nnoremap <leader>ch :let @*=expand("%:p:h")<CR>
+  nnoremap <leader>cd :let @*=expand("%:p:h")<CR>
 " Linux | copy current file name (relative/absolute) to system clipboard (Linux version)
 elseif has("gui_gtk") || has("gui_gtk2") || has("gui_gnome") || has("unix")
   " relative path (src/foo.txt)

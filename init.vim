@@ -1,6 +1,6 @@
 " set default charset
-set encoding=utf-8
-set termencoding=utf-8
+" set encoding=utf-8
+" set termencoding=utf-8
 
 " disable .swap or backup files
 set noswapfile
@@ -65,6 +65,10 @@ set ttyfast
 set lazyredraw
 set norelativenumber
 set nocursorline
+
+" Ctags
+" generate ctags: ctags -R --exclude=.git --exclude=frontend --exclude=log *
+set tags=./idea/tags;
 
 " remove extra whitespace on save
 autocmd FileType * autocmd BufWritePre <buffer> %s/\s\+$//e
