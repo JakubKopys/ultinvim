@@ -1,6 +1,6 @@
 " set default charset
-" set encoding=utf-8
-" set termencoding=utf-8
+set encoding=utf-8
+set termencoding=utf-8
 
 " disable .swap or backup files
 set noswapfile
@@ -12,6 +12,11 @@ set autoindent
 set ts=2                " number of spaces in a tab
 set sw=2                " number of spaces for indent
 set et                  " expand tabs into spaces
+
+" overwrite ts and sw when editing .js files
+autocmd FileType javascript set tabstop=4|set shiftwidth=4
+" and for .css files
+autocmd FileType css set tabstop=4|set shiftwidth=4
 
 " highlight settings
 set incsearch
