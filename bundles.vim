@@ -10,12 +10,11 @@ Plug 'edkolev/tmuxline.vim'
 " CtrlP
 Plug 'ctrlpvim/ctrlp.vim'
 
-" Dim inactive split
-" TODO: setup this
-" Plug 'blueyed/vim-diminactive'
-
 " Marks
 Plug 'kshenoy/vim-signature'
+
+" comments
+Plug 'tomtom/tcomment_vim'
 
 " Airline
 Plug 'vim-airline/vim-airline'
@@ -29,6 +28,9 @@ Plug 'vim-ruby/vim-ruby'
 
 " vim-fugitive
 Plug 'tpope/vim-fugitive'
+
+" Gbrowse
+Plug 'tpope/vim-rhubarb'
 
 " JS highlightning
 Plug 'pangloss/vim-javascript'
