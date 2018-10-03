@@ -13,6 +13,20 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+""" START Buffer movement
+" Move to the previous buffer with "gp"
+nnoremap gp :bp<CR>
+
+" Move to the next buffer with "gn"
+nnoremap gn :bn<CR>
+
+" List all possible buffers with "gl"
+nnoremap gl :ls<CR>
+
+" List all possible buffers with "gb" and accept a new buffer argument [1]
+nnoremap gb :ls<CR>:b
+""" END Buffer movement
+
 " toggle paste mode with F3 (:set paste/nopaste)
 set pastetoggle=<F3>
 
@@ -33,6 +47,7 @@ nmap <leader>D :Gdiff<space>
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
+""" START Copying file paths
 " MacOS | copy current file name (relative/absolute) to system clipboard
 if has("mac") || has("gui_macvim") || has("gui_mac")
   " relative path  (src/foo.txt)
@@ -60,3 +75,4 @@ elseif has("gui_gtk") || has("gui_gtk2") || has("gui_gnome") || has("unix")
   " directory name (/something/src)
   nnoremap <leader>ch :let @+=expand("%:p:h")<CR>
 endif
+""" END Copying file paths

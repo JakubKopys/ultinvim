@@ -70,6 +70,7 @@ set ttyfast
 set lazyredraw
 set norelativenumber
 set nocursorline
+set hid
 
 " Ctags
 " generate ctags: ctags -R --exclude=.git --exclude=frontend --exclude=log *
